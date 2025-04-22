@@ -6,9 +6,27 @@
 }
 
 .leftContainer {
-  border: 5px solid pink;
   height: 100%;
   width: 70%;
+}
+
+.firstLeftTriangle, .secondLeftTriangle,
+.thirdLeftTriangle {
+  border-top: 127px solid transparent;
+  border-bottom: 136px solid transparent;
+}
+
+.firstLeftTriangle {
+  margin-top: 7px;
+  border-left: 385px solid rgb(0, 0, 0);
+}
+
+.secondLeftTriangle {
+  border-left: 385px solid #6f1d1b;
+}
+
+.thirdLeftTriangle {
+  border-left: 385px solid rgb(0, 0, 0);
 }
 
 .middleContainer {
@@ -38,7 +56,25 @@
 }
 
 .rightContainer {
-  border: 5px solid black;
   height: 100%;
   width: 70%;
+}
+
+.firsrightTriangle, .secondrightTriangle,
+.thirdrightTriangle {
+  border-top: 127px solid transparent;
+  border-bottom: 135px solid transparent;
+}
+
+.firsrightTriangle {
+  margin-top: 7px;
+  border-right: 385px solid rgb(0, 0, 0);
+}
+
+.secondrightTriangle {
+  border-right: 385px solid #6f1d1b;
+}
+
+.thirdrightTriangle {
+  border-right: 385px solid rgb(0, 0, 0);
 }
