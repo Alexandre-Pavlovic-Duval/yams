@@ -2,35 +2,43 @@
   height: 100vh;
   width: 100vw;
   display: flex;
+  background-color: #fffef2;
 }
 
 .leftContainer {
-  border: 5px solid blue;
+  border: 5px solid pink;
   height: 100%;
-  width: 100%;
+  width: 70%;
 }
 
 .middleContainer {
-  border: 5px solid blue;
   height: 100%;
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
 .titleMidlleContainer {
-  border: 5px solid gray;
-  height: 15%;
-}
-
-.dicesMiddleContainer {
-  border: 5px solid blueviolet;
-  height: 85%;
+  height: 10%;
+  margin-top: 15px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
+.dicesMiddleContainer {
+  height: 73%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #30532b;
+  border-radius: 50%;
+  gap: 10px;
+}
+
 .rightContainer {
-  border: 5px solid blue;
+  border: 5px solid black;
   height: 100%;
-  width: 100%;
+  width: 70%;
 }

@@ -12,9 +12,17 @@ function Home() {
     {diceNumber: "6.png", alt: "Number 6"},
   ];
 
-  let dice = dices.map(element => {
-    return <Dice number={element.diceNumber} alt={element.alt}/>
-  });
+  let dice = [];
+  // Randomize and display of 5 dices
+  for (let i = 0; i < 5; i++){
+    let randomDice = Math.floor(Math.random() * dices.length);
+    let randomizedDice = dices[randomDice];
+    dice.push(
+      <Dice key={i} number={randomizedDice.diceNumber} alt={randomizedDice.alt} />
+    );
+  };
+
+  let yamsTitle = <img src={"logo.png"} alt="Yams Logo"/>
 
 
   return (
@@ -29,7 +37,7 @@ function Home() {
 
         {/* Middle Part Container */}
         <div className= {styles.middleContainer}>
-          <div className= {styles.titleMidlleContainer}></div>
+          <div className= {styles.titleMidlleContainer}>{yamsTitle}</div>
           <div className= {styles.dicesMiddleContainer}>
             {dice}
           </div>
